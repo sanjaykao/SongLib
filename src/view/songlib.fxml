@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Sanjay Kao (sjk231) and Virginia Cheng (vc365)-->
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane id="AnchorPane" prefHeight="475" prefWidth="700" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SongLibController">
+    <children>
+    	<ListView layoutX="14.0" layoutY="14.0" prefHeight="250.0" prefWidth="200.0" fx:id="listView">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      	</ListView>
+      	<TextArea layoutX="14.0" layoutY="285.0" prefHeight="170.0" prefWidth="320.0" fx:id="details">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      	</TextArea>
+      	<Label layoutX="483" layoutY="100" text="Add/Edit a song: " fx:id="addLabel" />
+      	<Button layoutX="490" layoutY="270" prefHeight="27.0" prefWidth="80.0" mnemonicParsing="false" text="Done" onAction="#addSong" fx:id="add" />
+        <Button layoutX="250" layoutY="90" prefHeight="27.0" prefWidth="80.0" mnemonicParsing="false" text="Edit" onAction="#editSong" fx:id="edit" />
+        <Button layoutX="250" layoutY="130" prefHeight="27.0" prefWidth="80.0" mnemonicParsing="false" text="Delete" onAction="#deleteSong" fx:id="delete" />
+        <Label layoutX="400" layoutY="130" text="Name: " fx:id="name" />
+        <TextField layoutX="450" layoutY="127" fx:id="enteredName" />
+        <Label layoutX="400" layoutY="165" text="Artist: " fx:id="artist" />
+        <TextField layoutX="450" layoutY="162" fx:id="enteredArtist" />
+        <Label layoutX="400" layoutY="200" text="Album: " fx:id="album" />
+        <TextField layoutX="450" layoutY="197" fx:id="enteredAlbum" />
+        <Label layoutX="400" layoutY="235" text="Year: " fx:id="year" />
+        <TextField layoutX="450" layoutY="232" fx:id="enteredYear" />
+    </children>
+</AnchorPane>
